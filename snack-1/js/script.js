@@ -11,3 +11,7 @@ const placeCards = invitedGuests.map((guest, index) => {
 });
 // console.log(placeCards)
 
+// Stampiamo la lista dei segnaposto
+placeCards.forEach((placeCard) => {
+    console.log(`Tavolo: ${placeCard.tableName}, Ospite: ${placeCard.guestName}, Posto: ${placeCard.place}`);
+});
