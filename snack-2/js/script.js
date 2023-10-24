@@ -1,6 +1,6 @@
 "use strict";
 
-const studenti = [
+const students = [
     {
         ID: "213",
         name: "Marco della Rovere",
@@ -37,12 +37,22 @@ const studenti = [
         grades: "84",
     },
 ];
-// console.log(studenti)
+// console.log(students)
 
 // Nomi in maiuscolo
 
-const nameUppercase = studenti.map(studenti => {
-    return studenti.name.toUpperCase();
+const nameUppercase = students.map(student => {
+    return student.name.toUpperCase();
 });
 
 console.log(nameUppercase)
+
+const studentsOver70 = students.filter(student => {
+    return student.grades > 70;
+})
+console.log(studentsOver70)
+
+const studentsOver70andIdOver120 = students.filter(student => {
+    return student.grades > 70 && student.ID > 120;
+})
+console.log(studentsOver70)
