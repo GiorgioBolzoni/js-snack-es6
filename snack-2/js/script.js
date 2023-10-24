@@ -50,9 +50,16 @@ console.log(nameUppercase)
 const studentsOver70 = students.filter(student => {
     return student.grades > 70;
 })
+console.log('I seguenti studenti verranno ammessi alla classe!! :)')
 console.log(studentsOver70)
 
 const studentsOver70andIdOver120 = students.filter(student => {
     return student.grades > 70 && student.ID > 120;
 })
 console.log(studentsOver70)
+
+const otherStudents = students.filter(student => {
+    return student.grades < 70;
+})
+console.log('I seguenti studenti non saranno ammessi alla classe :(')
+console.log(otherStudents)
